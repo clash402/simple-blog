@@ -1,0 +1,12 @@
+{% include "header.html" %}
+
+<div class="content">
+    <div class="card">
+        <h2>{{ post.title }}</h2>
+        <h3>{{ post.subtitle }}</h3>
+        <p>{{ post.body }}</p>
+        <img src="{{ url_for('static', filename='images/image-1.png') }}" alt="">
+    </div>
+</div>
+
+{% include "footer.html" %}
